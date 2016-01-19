@@ -1,0 +1,483 @@
+Script started on Tue 19 Jan 2016 10:04:10 AM CST
+mss0024@catalina:~/cs390/hw1$ cd cs [K309[K[K[K[K[K[K[Kd ..
+mss0024@catalina:~/cs390$ tar[K[K[Kman tar
+[?1049h[?1h=TAR(1)                                                             BSD General Commands Manual                                                             TAR(1)[m
+[m
+[1mNAME[0m[m
+     [1mtar[0m — The GNU version of the tar archiving utility[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mtar[0m [[1m-[0m] [1mA[0m [1m--catenate[0m [1m--concatenate[0m [1m|[0m [1mc[0m [1m--create[0m [1m|[0m [1md[0m [1m--diff[0m [1m--compare[0m [1m|[0m [1m--delete[0m [1m|[0m [1mr[0m [1m--append[0m [1m|[0m [1mt[0m [1m--list[0m [1m|[0m [1m--test-label[0m [1m|[0m [1mu[0m [1m--update[0m [1m|[0m [1mx[0m [1m--extract[0m [1m--get[0m[m
+         [[4moptions[24m] [[4mpathname[24m [4m...[24m][m
+[m
+[1mDESCRIPTION[0m[m
+     [1mTar[0m stores and extracts files from a tape or disk archive.[m
+[m
+     The first argument to tar should be a function; either one of the letters [1mAcdrtux[0m, or one of the long function names.  A function letter need not be pre‐[m
+     fixed with ``-'', and may be combined with other single-letter options.  A long function name must be prefixed with [1m--[0m.  Some options take a parameter; with[m
+     the single-letter form these must be given as separate arguments.  With the long form, they may be given by appending [1m=[0m[4mvalue[24m to the option.[m
+[m
+[1mFUNCTION[0m [1mLETTERS[0m[m
+     Main operation mode:[m
+[m
+     [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+           append tar files to an archive[m
+[m
+     [1m-c[0m, [1m--create[0m[m
+           create a new archive[m
+[m
+     [1m-d[0m, [1m--diff[0m, [1m--compare[0m[m
+           find differences between archive and file system[m
+[m
+     [1m--delete[0m[m
+           delete from the archive (not on mag tapes!)[m
+[m
+     [1m-r[0m, [1m--append[0m[m
+           append files to the end of an archive[m
+[m
+     [1m-t[0m, [1m--list[0m[m
+           list the contents of an archive[m
+[m
+     [1m--test-label[0m[m
+           test the archive volume label and exit[m
+[m
+     [1m-u[0m, [1m--update[0m[m
+           only append files newer than copy in archive[m
+[m
+     [1m-x[0m, [1m--extract[0m, [1m--get[0m[m
+           extract files from an archive[m
+[m
+[1mOTHER[0m [1mOPTIONS[0m[m
+[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     Operation modifiers:[m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     -[0-7][lmh][m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specify drive and density[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-a[0m, [1m--auto-compress[0m[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--acls[0m[m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enable the POSIX ACLs support[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-acls[0m[m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Disable the POSIX ACLs support[m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--add-file[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           add given FILE to the archive (useful if its name starts with a dash)[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--anchored[0m[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           patterns match file name start[m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+[48;1H[K[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     Main operation mode:[m
+[48;1H[K[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mFUNCTION[0m [1mLETTERS[0m[m
+[48;1H[K[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     the single-letter form these must be given as separate arguments.  With the long form, they may be given by appending [1m=[0m[4mvalue[24m to the option.[m
+[48;1H[K[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     fixed with ``-'', and may be combined with other single-letter options.  A long function name must be prefixed with [1m--[0m.  Some options take a parameter; with[m
+[48;1H[K[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     The first argument to tar should be a function; either one of the letters [1mAcdrtux[0m, or one of the long function names.  A function letter need not be pre‐[m
+[48;1H[K[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mTar[0m stores and extracts files from a tape or disk archive.[m
+[48;1H[K[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[48;1H[K[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         [[4moptions[24m] [[4mpathname[24m [4m...[24m][m
+[48;1H[K[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mtar[0m [[1m-[0m] [1mA[0m [1m--catenate[0m [1m--concatenate[0m [1m|[0m [1mc[0m [1m--create[0m [1m|[0m [1md[0m [1m--diff[0m [1m--compare[0m [1m|[0m [1m--delete[0m [1m|[0m [1mr[0m [1m--append[0m [1m|[0m [1mt[0m [1m--list[0m [1m|[0m [1m--test-label[0m [1m|[0m [1mu[0m [1m--update[0m [1m|[0m [1mx[0m [1m--extract[0m [1m--get[0m[m
+[48;1H[K[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[48;1H[K[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mtar[0m — The GNU version of the tar archiving utility[m
+[48;1H[K[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[48;1H[K[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTAR(1)                                                             BSD General Commands Manual                                                             TAR(1)[m
+[48;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     Operation modifiers:[m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     -[0-7][lmh][m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specify drive and density[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-a[0m, [1m--auto-compress[0m[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--acls[0m[m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enable the POSIX ACLs support[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-acls[0m[m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Disable the POSIX ACLs support[m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--add-file[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           add given FILE to the archive (useful if its name starts with a dash)[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--anchored[0m[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           patterns match file name start[m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-anchored[0m[m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           patterns match after any '/' (default for exclusion)[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--atime-preserve[0m[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           preserve access times on dumped files, either by restoring the times[m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-auto-compress[0m[m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           do not use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-b[0m, [1m--blocking-factor[0m [4mBLOCKS[24m[m
+[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           BLOCKS x 512 bytes per record[m
+[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-B[0m, [1m--read-full-records[0m[m
+[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           reblock as we read (for 4.2BSD pipes)[m
+[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-t[0m, [1m--list[0m[m
+[48;1H[K[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           append files to the end of an archive[m
+[48;1H[K[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-r[0m, [1m--append[0m[m
+[48;1H[K[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           delete from the archive (not on mag tapes!)[m
+[48;1H[K[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m--delete[0m[m
+[48;1H[K[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           find differences between archive and file system[m
+[48;1H[K[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-d[0m, [1m--diff[0m, [1m--compare[0m[m
+[48;1H[K[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           create a new archive[m
+[48;1H[K[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-c[0m, [1m--create[0m[m
+[48;1H[K[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM           append tar files to an archive[m
+[48;1H[K[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-A[0m, [1m--catenate[0m, [1m--concatenate[0m[m
+[48;1H[K[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     Main operation mode:[m
+[48;1H[K[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mFUNCTION[0m [1mLETTERS[0m[m
+[48;1H[K[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     the single-letter form these must be given as separate arguments.  With the long form, they may be given by appending [1m=[0m[4mvalue[24m to the option.[m
+[48;1H[K[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     fixed with ``-'', and may be combined with other single-letter options.  A long function name must be prefixed with [1m--[0m.  Some options take a parameter; with[m
+[48;1H[K[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     The first argument to tar should be a function; either one of the letters [1mAcdrtux[0m, or one of the long function names.  A function letter need not be pre‐[m
+[48;1H[K[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mTar[0m stores and extracts files from a tape or disk archive.[m
+[48;1H[K[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[48;1H[K[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM         [[4moptions[24m] [[4mpathname[24m [4m...[24m][m
+[48;1H[K[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mtar[0m [[1m-[0m] [1mA[0m [1m--catenate[0m [1m--concatenate[0m [1m|[0m [1mc[0m [1m--create[0m [1m|[0m [1md[0m [1m--diff[0m [1m--compare[0m [1m|[0m [1m--delete[0m [1m|[0m [1mr[0m [1m--append[0m [1m|[0m [1mt[0m [1m--list[0m [1m|[0m [1m--test-label[0m [1m|[0m [1mu[0m [1m--update[0m [1m|[0m [1mx[0m [1m--extract[0m [1m--get[0m[m
+[48;1H[K[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[48;1H[K[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1mtar[0m — The GNU version of the tar archiving utility[m
+[48;1H[K[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[48;1H[K[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTAR(1)                                                             BSD General Commands Manual                                                             TAR(1)[m
+[48;1H[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tar(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     Operation modifiers:[m
+[7m Manual page tar(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     -[0-7][lmh][m
+[7m Manual page tar(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specify drive and density[m
+[7m Manual page tar(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-a[0m, [1m--auto-compress[0m[m
+[7m Manual page tar(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--acls[0m[m
+[7m Manual page tar(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enable the POSIX ACLs support[m
+[7m Manual page tar(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-acls[0m[m
+[7m Manual page tar(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Disable the POSIX ACLs support[m
+[7m Manual page tar(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--add-file[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           add given FILE to the archive (useful if its name starts with a dash)[m
+[7m Manual page tar(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--anchored[0m[m
+[7m Manual page tar(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           patterns match file name start[m
+[7m Manual page tar(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-anchored[0m[m
+[7m Manual page tar(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           patterns match after any '/' (default for exclusion)[m
+[7m Manual page tar(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--atime-preserve[0m[m
+[7m Manual page tar(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           preserve access times on dumped files, either by restoring the times[m
+[7m Manual page tar(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-auto-compress[0m[m
+[7m Manual page tar(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           do not use archive suffix to determine the compression program[m
+[7m Manual page tar(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-b[0m, [1m--blocking-factor[0m [4mBLOCKS[24m[m
+[7m Manual page tar(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           BLOCKS x 512 bytes per record[m
+[7m Manual page tar(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-B[0m, [1m--read-full-records[0m[m
+[7m Manual page tar(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           reblock as we read (for 4.2BSD pipes)[m
+[7m Manual page tar(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--backup[0m[m
+[7m Manual page tar(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           backup before removal, choose version CONTROL[m
+[7m Manual page tar(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-C[0m, [1m--directory[0m [4mDIR[24m[m
+[7m Manual page tar(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           change to directory DIR[m
+[7m Manual page tar(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--check-device[0m[m
+[7m Manual page tar(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           check device numbers when creating incremental archives (default)[m
+[7m Manual page tar(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-check-device[0m[m
+[7m Manual page tar(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           do not check device numbers when creating incremental archives[m
+[7m Manual page tar(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--checkpoint[0m[m
+[7m Manual page tar(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           display progress messages every NUMBERth record (default 10)[m
+[7m Manual page tar(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--checkpoint-action[0m=[4mACTION[24m[m
+[7m Manual page tar(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           execute ACTION on each checkpoint[m
+[7m Manual page tar(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--delay-directory-restore[0m[m
+[7m Manual page tar(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           delay setting modification times and permissions of extracted[m
+[7m Manual page tar(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-delay-directory-restore[0m[m
+[7m Manual page tar(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           cancel the effect of --delay-directory-restore option[m
+[7m Manual page tar(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude[0m=[4mPATTERN[24m[m
+[7m Manual page tar(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude files, given as a PATTERN[m
+[7m Manual page tar(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-backups[0m[m
+[7m Manual page tar(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude backup and lock files[m
+[7m Manual page tar(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-caches[0m[m
+[7m Manual page tar(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude contents of directories containing CACHEDIR.TAG,[m
+[7m Manual page tar(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-caches-all[0m[m
+[7m Manual page tar(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude directories containing CACHEDIR.TAG[m
+[7m Manual page tar(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-caches-under[0m[m
+[7m Manual page tar(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude everything under directories containing CACHEDIR.TAG[m
+[7m Manual page tar(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-tag[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude contents of directories containing FILE, except[m
+[7m Manual page tar(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-tag-all[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude directories containing FILE[m
+[7m Manual page tar(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-tag-under[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude everything under directories containing FILE[m
+[7m Manual page tar(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--exclude-vcs[0m[m
+[7m Manual page tar(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exclude version control system directories[m
+[7m Manual page tar(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-f[0m, [1m--file[0m [4mARCHIVE[24m[m
+[7m Manual page tar(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use archive file or device ARCHIVE[m
+[7m Manual page tar(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-F[0m, [1m--info-script[0m, [1m--new-volume-script[0m [4mNAME[24m[m
+[7m Manual page tar(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           run script at end of each tape (implies -M)[m
+[7m Manual page tar(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--force-local[0m[m
+[7m Manual page tar(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           archive file is local even if it has a colon[m
+[7m Manual page tar(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--full-time[0m[m
+[7m Manual page tar(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           print file time to its full resolution[m
+[7m Manual page tar(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-g[0m, [1m--listed-incremental[0m [4mFILE[24m[m
+[7m Manual page tar(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           handle new GNU-format incremental backup[m
+[7m Manual page tar(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-G[0m, [1m--incremental[0m[m
+[7m Manual page tar(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           handle old GNU-format incremental backup[m
+[7m Manual page tar(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--group[0m=[4mNAME[24m[m
+[7m Manual page tar(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           force NAME as group for added files[m
+[7m Manual page tar(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-h[0m, [1m--dereference[0m[m
+[7m Manual page tar(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           follow symlinks; archive and dump the files they point to[m
+[7m Manual page tar(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-H[0m, [1m--format[0m [4mFORMAT[24m[m
+[7m Manual page tar(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           create archive of the given formatFORMAT is one of the following:[m
+[7m Manual page tar(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=gnu[0m[m
+[7m Manual page tar(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 GNU tar 1.13.x format[m
+[7m Manual page tar(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=oldgnu[0m[m
+[7m Manual page tar(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 GNU format as per tar <= 1.12[m
+[7m Manual page tar(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=pax[0m[m
+[7m Manual page tar(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 POSIX 1003.1-2001 (pax) format[m
+[7m Manual page tar(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=posix[0m[m
+[7m Manual page tar(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 same as pax[m
+[7m Manual page tar(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=ustar[0m[m
+[7m Manual page tar(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 POSIX 1003.1-1988 (ustar) format[m
+[7m Manual page tar(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--format=v7[0m[m
+[7m Manual page tar(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 old V7 tar format[m
+[7m Manual page tar(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--hard-dereference[0m[m
+[7m Manual page tar(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           follow hard links; archive and dump the files they refer to[m
+[7m Manual page tar(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-i[0m, [1m--ignore-zeros[0m[m
+[7m Manual page tar(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ignore zeroed blocks in archive (means EOF)[m
+[7m Manual page tar(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-I[0m, [1m--use-compress-program[0m [4mPROG[24m[m
+[7m Manual page tar(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           filter through PROG (must accept -d)[m
+[7m Manual page tar(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--ignore-case[0m[m
+[7m Manual page tar(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ignore case[m
+[7m Manual page tar(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-ignore-case[0m[m
+[7m Manual page tar(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           case sensitive matching (default)[m
+[7m Manual page tar(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--ignore-command-error[0m[m
+[7m Manual page tar(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ignore exit codes of children[m
+[7m Manual page tar(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-ignore-command-error[0m[m
+[7m Manual page tar(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           treat non-zero exit codes of children as error[m
+[7m Manual page tar(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--ignore-failed-read[0m[m
+[7m Manual page tar(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           do not exit with nonzero on unreadable files[m
+[7m Manual page tar(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--index-file[0m=[4mFILE[24m[m
+[7m Manual page tar(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           send verbose output to FILE[m
+[7m Manual page tar(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-j[0m, [1m--bzip2[0m[m
+[7m Manual page tar(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-J[0m, [1m--xz[0m[m
+[7m Manual page tar(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-k[0m, [1m--keep-old-files[0m[m
+[7m Manual page tar(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           don't replace existing files when extracting,[m
+[7m Manual page tar(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-K[0m, [1m--starting-file[0m [4mMEMBER-NAME[24m[m
+[7m Manual page tar(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           begin at member MEMBER-NAME when reading the archive[m
+[7m Manual page tar(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--keep-directory-symlink[0m[m
+[7m Manual page tar(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           preserve existing symlinks to directories when extracting[m
+[7m Manual page tar(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--keep-newer-files[0m[m
+[7m Manual page tar(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           don't replace existing files that are newer than their archive copies[m
+[7m Manual page tar(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-l[0m, [1m--check-links[0m[m
+[7m Manual page tar(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           print a message if not all links are dumped[m
+[7m Manual page tar(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-L[0m, [1m--tape-length[0m [4mNUMBER[24m[m
+[7m Manual page tar(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           change tape after writing NUMBER x 1024 bytes[m
+[7m Manual page tar(1) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--level[0m=[4mNUMBER[24m[m
+[7m Manual page tar(1) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           dump level for created listed-incremental archive[m
+[7m Manual page tar(1) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--lzip[0m[m
+[7m Manual page tar(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--lzma[0m[m
+[7m Manual page tar(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--lzop[0m[m
+[7m Manual page tar(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-m[0m, [1m--touch[0m[m
+[7m Manual page tar(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           don't extract file modified time[m
+[7m Manual page tar(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-M[0m, [1m--multi-volume[0m[m
+[7m Manual page tar(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           create/list/extract multi-volume archive[m
+[7m Manual page tar(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--mode[0m=[4mCHANGES[24m[m
+[7m Manual page tar(1) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           force (symbolic) mode CHANGES for added files[m
+[7m Manual page tar(1) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--mtime[0m=[4mDATE-OR-FILE[24m[m
+[7m Manual page tar(1) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           set mtime for added files from DATE-OR-FILE[m
+[7m Manual page tar(1) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-n[0m, [1m--seek[0m[m
+[7m Manual page tar(1) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           archive is seekable[m
+[7m Manual page tar(1) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-N[0m, [1m--newer[0m, [1m--after-date[0m [4mDATE-OR-FILE[24m[m
+[7m Manual page tar(1) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           only store files newer than DATE-OR-FILE[m
+[7m Manual page tar(1) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--newer-mtime[0m=[4mDATE[24m[m
+[7m Manual page tar(1) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           compare date and time when data changed only[m
+[7m Manual page tar(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--null[0m[m
+[7m Manual page tar(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           -T reads null-terminated names, disable -C[m
+[7m Manual page tar(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-null[0m[m
+[7m Manual page tar(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           disable the effect of the previous --null option[m
+[7m Manual page tar(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--numeric-owner[0m[m
+[7m Manual page tar(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           always use numbers for user/group names[m
+[7m Manual page tar(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-O[0m, [1m--to-stdout[0m[m
+[7m Manual page tar(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           extract files to standard output[m
+[7m Manual page tar(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--occurrence[0m[m
+[7m Manual page tar(1) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           process only the NUMBERth occurrence of each file in the archive;[m
+[7m Manual page tar(1) line 227 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 228 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--old-archive[0m, [1m--portability[0m[m
+[7m Manual page tar(1) line 229 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           same as --format=v7[m
+[7m Manual page tar(1) line 230 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 231 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--one-file-system[0m[m
+[7m Manual page tar(1) line 232 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           stay in local file system when creating archive[m
+[7m Manual page tar(1) line 233 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 234 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--overwrite[0m[m
+[7m Manual page tar(1) line 236 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           overwrite existing files when extracting[m
+[7m Manual page tar(1) line 237 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--overwrite-dir[0m[m
+[7m Manual page tar(1) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           overwrite metadata of existing directories when extracting (default)[m
+[7m Manual page tar(1) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-overwrite-dir[0m[m
+[7m Manual page tar(1) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           preserve metadata of existing directories[m
+[7m Manual page tar(1) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--owner[0m=[4mNAME[24m[m
+[7m Manual page tar(1) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           force NAME as owner for added files[m
+[7m Manual page tar(1) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-p[0m, [1m--preserve-permissions[0m, [1m--same-permissions[0m[m
+[7m Manual page tar(1) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           extract information about file permissions (default for superuser)[m
+[7m Manual page tar(1) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-P[0m, [1m--absolute-names[0m[m
+[7m Manual page tar(1) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           don't strip leading '/'s from file names[m
+[7m Manual page tar(1) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--pax-option[0m=[4mkeyword[[:]=value][,keyword[[:]=value]]...[24m[m
+[7m Manual page tar(1) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           control pax keywords[m
+[7m Manual page tar(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--posix[0m[m
+[7m Manual page tar(1) line 259 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           same as --format=posix[m
+[7m Manual page tar(1) line 260 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 261 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--preserve[0m[m
+[7m Manual page tar(1) line 262 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           same as both -p and -s[m
+[7m Manual page tar(1) line 263 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 264 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--quote-chars[0m=[4mSTRING[24m[m
+[7m Manual page tar(1) line 265 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           additionally quote characters from STRING[m
+[7m Manual page tar(1) line 266 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 267 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-quote-chars[0m=[4mSTRING[24m[m
+[7m Manual page tar(1) line 268 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           disable quoting for characters from STRING[m
+[7m Manual page tar(1) line 269 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 270 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--quoting-style[0m=[4mSTYLE[24m[m
+[7m Manual page tar(1) line 271 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           set name quoting style; see below for valid STYLE values[m
+[7m Manual page tar(1) line 272 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-R[0m, [1m--block-number[0m[m
+[7m Manual page tar(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           show block number within archive with each message[m
+[7m Manual page tar(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--record-size[0m=[4mNUMBER[24m[m
+[7m Manual page tar(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           NUMBER of bytes per record, multiple of 512[m
+[7m Manual page tar(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--recursion[0m[m
+[7m Manual page tar(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           recurse into directories (default)[m
+[7m Manual page tar(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-recursion[0m[m
+[7m Manual page tar(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           avoid descending automatically in directories[m
+[7m Manual page tar(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--recursive-unlink[0m[m
+[7m Manual page tar(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           empty hierarchies prior to extracting directory[m
+[7m Manual page tar(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--remove-files[0m[m
+[7m Manual page tar(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           remove files after adding them to the archive[m
+[7m Manual page tar(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--restrict[0m[m
+[7m Manual page tar(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           disable use of some potentially harmful options[m
+[7m Manual page tar(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--rmt-command[0m=[4mCOMMAND[24m[m
+[7m Manual page tar(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use given rmt COMMAND instead of rmt[m
+[7m Manual page tar(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--rsh-command[0m=[4mCOMMAND[24m[m
+[7m Manual page tar(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use remote COMMAND instead of rsh[m
+[7m Manual page tar(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-s[0m, [1m--preserve-order[0m, [1m--same-order[0m[m
+[7m Manual page tar(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           member arguments are listed in the same order as the[m
+[7m Manual page tar(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-S[0m, [1m--sparse[0m[m
+[7m Manual page tar(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           handle sparse files efficiently[m
+[7m Manual page tar(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--same-owner[0m[m
+[7m Manual page tar(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           try extracting files with the same ownership as exists in the archive (default for superuser)[m
+[7m Manual page tar(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 309 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-same-owner[0m[m
+[7m Manual page tar(1) line 310 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           extract files as yourself (default for ordinary users)[m
+[7m Manual page tar(1) line 311 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 312 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-same-permissions[0m[m
+[7m Manual page tar(1) line 313 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           apply the user's umask when extracting permissions from the archive (default for ordinary users)[m
+[7m Manual page tar(1) line 314 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 315 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-seek[0m[m
+[7m Manual page tar(1) line 316 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           archive is not seekable[m
+[7m Manual page tar(1) line 317 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 318 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--selinux[0m[m
+[7m Manual page tar(1) line 319 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enable the SELinux context support[m
+[7m Manual page tar(1) line 320 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 321 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--no-selinux[0m[m
+[7m Manual page tar(1) line 322 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Disable the SELinux context support[m
+[7m Manual page tar(1) line 323 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 324 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--show-defaults[0m[m
+[7m Manual page tar(1) line 325 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           show tar defaults[m
+[7m Manual page tar(1) line 326 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tar(1) line 327 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--show-omitted-dirs[0m[m
+[7m Manual page tar(1) line 328 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           when listing or extracting, list each directory
